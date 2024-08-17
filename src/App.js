@@ -1,10 +1,22 @@
-import logo from "./logo.svg";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import Mission from "./pages/Mission";
+import Team from "./pages/Team";
+import Navbar from "./components/navbar/Navbar";
 
 function App() {
   return (
-    <div className="bg-slate-600 min-h-screen p-20">
-      <h1 className="text-center text-white text-6xl">Bitecode!</h1>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/team" element={<Team />} />
+        <Route path="/mission" element={<Mission />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
   );
 }
 
