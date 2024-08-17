@@ -1,4 +1,4 @@
-import Splash from "../components/Spash";
+import Splash from "../components/Splash";
 const Home = () => {
   return (
     <div className="">

@@ -4,12 +4,13 @@ import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Mission from "./pages/Mission";
 import Team from "./pages/Team";
-import Navbar from "./components/navbar/Navbar";
+import Sidebar from "./components/navbar/Sidebar";
 
 function App() {
   return (
     <Router>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Sidebar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/team" element={<Team />} />
