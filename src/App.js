@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import Mission from "./pages/Mission";
 import Team from "./pages/Team";
 import Sidebar from "./components/navbar/Sidebar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/mission" element={<Mission />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

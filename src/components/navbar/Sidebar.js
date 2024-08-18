@@ -47,6 +47,7 @@ const Sidebar = () => {
               open ? "delay-300 opacity-100" : "opacity-0"
             } z-20 left-8 mx-12 text-black`}
           >
+            <SidebarTab text="Home" path="/" onClick={toggleSidebar} />
             <SidebarTab text="The Team" path="/team" onClick={toggleSidebar} />
             <SidebarTab
               text="Our Mission"
@@ -58,7 +59,6 @@ const Sidebar = () => {
               path="/contact"
               onClick={toggleSidebar}
             />
-            <SidebarTab text="" path="/" onClick={toggleSidebar} />
           </div>
         </div>
       </div>
