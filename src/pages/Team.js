@@ -20,7 +20,6 @@ const Team = () => {
           </p>
         </div>
         <div className="grid grid-cols-3 gap-x-8 gap-y-8 max-w-[1000px] h-fit w-full mx-auto">
-          {" "}
           <MemberCard
             image={Dog}
             name="Scout"
