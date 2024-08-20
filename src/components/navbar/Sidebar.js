@@ -5,13 +5,11 @@ import { IoIosMenu } from "react-icons/io";
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
   const [hide, setHide] = useState(true);
-  const [rotate, setRotate] = useState(false);
 
   function timeout(delay) {
     return new Promise((res) => setTimeout(res, delay));
   }
   async function toggleSidebar() {
-    setRotate((prev) => !prev);
     if (hide) {
       setHide(false);
       await timeout(10);
@@ -48,15 +46,21 @@ const Sidebar = () => {
             } z-20 left-8 mx-12 text-black`}
           >
             <SidebarTab text="Home" path="/" onClick={toggleSidebar} />
-            <SidebarTab text="The Team" path="/team" onClick={toggleSidebar} />
             <SidebarTab
               text="Our Mission"
               path="/mission"
               onClick={toggleSidebar}
             />
+            <SidebarTab text="The Team" path="/team" onClick={toggleSidebar} />
+
             <SidebarTab
-              text="Reach Out"
+              text="Contact"
               path="/contact"
+              onClick={toggleSidebar}
+            />
+            <SidebarTab
+              text="Projects"
+              path="/projects"
               onClick={toggleSidebar}
             />
           </div>

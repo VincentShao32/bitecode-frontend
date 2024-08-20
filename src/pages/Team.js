@@ -1,10 +1,15 @@
 import Logo from "../components/Logo";
 import Splash from "../components/Splash";
 import MemberCard from "../components/MemberCard";
+import { useEffect } from "react";
 
 import Dog from "../assets/dog-puppy-on-garden-royalty-free-image-1586966191.avif";
 
 const Team = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="">
       <Logo color="white" />

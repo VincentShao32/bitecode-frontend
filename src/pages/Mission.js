@@ -1,7 +1,12 @@
 import Splash from "../components/Splash";
 import Logo from "../components/Logo";
+import { useEffect } from "react";
 
 const Mission = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <Logo color="white" />
