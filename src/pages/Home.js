@@ -5,16 +5,16 @@ import { Link } from "react-router-dom";
 import Store from "../assets/store.jpg";
 
 const Home = () => {
-  // useEffect(() => {
-  //   window.scrollTo(0, 0);
-  // }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div className="flex flex-col">
       <Logo color="white" />
       <Splash text="Empowering small businesses with tech solutions." />
-      <div className="min-h-screen flex items-center  w-full relative bg-gradient-to-l from-transparent to-white to-60%">
-        <div className="flex flex-col gap-6 max-w-[700px] w-full p-16 z-10">
+      <div className="min-h-screen flex items-center  w-full justify-between">
+        <div className="flex flex-col gap-6 max-w-[700px] w-full px-16 z-10">
           <h1 className="font-bold text-5xl">Overcoming Obstacles</h1>
           <p className="text-xl leading-loose">
             We believe in creating equal opportunity for all businesses, big and
@@ -24,7 +24,7 @@ const Home = () => {
           </p>
           <Link
             to="/mission"
-            className="text-xl border-slate-700 border-2  w-fit p-4 hover:bg-slate-700 hover:text-white transition ease-in-out z-10"
+            className="text-xl border-slate-700 border-2  w-fit p-4 hover:bg-slate-700 hover:text-white transition ease-in-out"
           >
             View Our Mission Statement
           </Link>
@@ -32,11 +32,16 @@ const Home = () => {
 
         <img
           src={Store}
-          className="object-cover w-full h-full  absolute top-0 mix-blend-overlay"
+          className="object-cover max-h-screen w-[60%] min-h-screen "
+          alt=""
         />
       </div>
-
-      <div className="min-h-screen flex items-center  w-full relative bg-gradient-to-r from-transparent to-white to-60% justify-end">
+      <div className="min-h-screen flex items-center  w-full justify-between ">
+        <img
+          src={Store}
+          className="object-cover max-h-screen min-h-screen w-[60%]"
+          alt=""
+        />
         <div className="flex flex-col gap-6 max-w-[700px] w-full px-16 z-10">
           <h1 className="font-bold text-5xl">Join Us</h1>
           <p className="text-xl leading-loose">
@@ -52,11 +57,6 @@ const Home = () => {
             Our Team
           </Link>
         </div>
-
-        <img
-          src={Store}
-          className="object-cover w-full h-full  absolute top-0 mix-blend-overlay"
-        />
       </div>
     </div>
   );
