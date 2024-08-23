@@ -24,7 +24,7 @@ const Home = () => {
           </p>
           <Link
             to="/mission"
-            className="text-xl border-slate-700 border-2  w-fit p-4 hover:bg-slate-700 hover:text-white transition ease-in-out"
+            className="text-xl border-slate-700 border-2  w-fit p-4 bg-slate-700 text-white  hover:bg-slate-500 hover:border-slate-500  transition ease-in-out"
           >
             View Our Mission Statement
           </Link>
@@ -52,7 +52,7 @@ const Home = () => {
           </p>
           <Link
             to="/team"
-            className="text-xl border-slate-700 border-2  w-fit p-4 hover:bg-slate-700 hover:text-white transition ease-in-out"
+            className="text-xl border-slate-700 border-2  w-fit p-4 bg-slate-700 hover:bg-slate-500 hover:border-slate-500  text-white transition ease-in-out"
           >
             Our Team
           </Link>
